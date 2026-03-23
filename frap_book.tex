@@ -389,7 +389,7 @@ $$\infer[\mathsf{Congruence}]{f(e_1, \ldots, e_n) = f'(e'_1, \ldots, e'_n)}{
 
 As one more example of a decidable theory, consider the algebraic structure of \emph{semirings}\index{semirings}, which may profitably be remembered as ``types that act like natural numbers.''
 A semiring is any set containing two elements notated 0 and 1, closed under two binary operators notated $+$ and $\times$.
-The notations are suggestive, but in fact we have free reign in choosing the set, elements, and operators, so long as the following axioms\footnote{The equations are taken almost literally from \url{https://en.wikipedia.org/wiki/Semiring}.} are satisfied:
+The notations are suggestive, but in fact we have free rein in choosing the set, elements, and operators, so long as the following axioms\footnote{The equations are taken almost literally from \url{https://en.wikipedia.org/wiki/Semiring}.} are satisfied:
 \begin{eqnarray*}
   (a + b) + c &=& a + (b + c) \\
   0 + a &=& a \\
@@ -4995,7 +4995,7 @@ $$\begin{array}{rrcl}
 
 In addition to the basic structure of the languages from Chapters \ref{embeddings} and \ref{seplog}, we have three features specific to concurrency.
 We follow the common ``threads and locks''\index{locks} style of synchronization, with commands $\mt{Lock} \; a$ and $\mt{Unlock} \; a$ for acquiring and releasing locks, respectively.
-We also have $c_1 || c_2$ for running commands $c_1$ and $c_2$ in parallel, giving a scheduler free reign to interleave their atomic steps.
+We also have $c_1 || c_2$ for running commands $c_1$ and $c_2$ in parallel, giving a scheduler free rein to interleave their atomic steps.
 
 The operational semantics is small-step\index{small-step operational semantics}, especially because big-step semantics\index{big-step operational semantics} is notoriously awkward for concurrency.
 Each state of the system is a triple $(h, l, c)$, with $h$ and $c$ the heap and current command from our usual semantics.
