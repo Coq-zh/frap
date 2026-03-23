@@ -44,10 +44,9 @@ fraplib.tgz: Makefile
 	cp SepCancel.v fraplib/
 	tar cf fraplib.tgz fraplib/*
 
-WHERE=chlipala.net:sites/chlipala/adam/frap/
-
 install: index.html frap_book.pdf frap.tgz fraplib.tgz
-	rsync frap_book.pdf $(WHERE)
-	rsync frap.tgz $(WHERE)
-	rsync fraplib.tgz $(WHERE)
-	rsync index.html $(WHERE)
+	mkdir -p publish
+	cp frap_book.pdf publish/
+	cp frap.tgz publish/
+	cp fraplib.tgz publish/
+	cp index.html publish/

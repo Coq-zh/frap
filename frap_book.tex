@@ -414,6 +414,9 @@ $$\begin{array}{rrcl}
 Note how the applicability of the semiring theory is incomparable to the applicability of the linear-arithmetic theory.
 That is, while some goals are provable via either, some are provable only via the semiring theory and some provable only by linear arithmetic.
 For instance, by the semiring theory, we can prove $x(y + z) = xy + xz$, while linear arithmetic can prove $x - x = 0$.
+For a more-interesting example in the latter category, where we don't just depend on the fact that the semiring theory contains no ``-'' operator, we can also consider trying to prove $x = 0$ from hypothesis $x + x = x$.
+Even if we generalized the semiring theory to include hypotheses or implication, it wouldn't have the logical power to draw that last deduction, which is trivial for linear arithmetic.
+The reason is that there exist semirings, like the Booleans where ``+'' means logical ``or,'' where the implication is false.
 
 \section{Simplification and Rewriting}
 
